@@ -16,11 +16,14 @@ def set_missing_values(in_data, column, method='mode'):
         column: заполняемый столбец.
     :return: измененный DataFrame.
     """
-    if method == 'mean':
-        return in_data.fillna(column.mean())
-    elif method == 'median':
-        return in_data.fillna(column.median())
-    elif method == 'delete':
-        return in_data.dropna()
+    if column.name in in_data.columns:
+        if method == 'mean':
+            return in_data.fillna(column.mean())
+        elif method == 'median':
+            return in_data.fillna(column.median())
+        elif method == 'delete':
+            return in_data.dropna()
+        else:
+            raise ValueError("Метод должен быть 'mean', 'median', or 'delete'")
     else:
-        raise ValueError("Метод должен быть 'mean', 'median', or 'delete'")
+        raise ValueError("Столбец не найден")
