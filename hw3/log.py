@@ -1,7 +1,7 @@
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='log.log', level=logging.INFO, format="%(asctime)s - %(levelname)s: %(message)s", datefmt='%Y-%m-%d %I:%M:%S')
+logging.basicConfig(filename='log.log', level=logging.INFO, format="%(asctime)s - %(levelname)s: %(message)s", datefmt='%Y-%m-%d %H:%M:%S')
 
 def add_log_info(text_info):
     logger.info(text_info)

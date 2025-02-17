@@ -16,6 +16,11 @@ def add_plot(in_date, x_column = 'cause', y_column = 'cnt_incidents', name = 'pl
     plt.figure(figsize=(10, 6))
     plt.plot(in_date[x_column], in_date[y_column], marker='o')
     plt.title(f'Линейный график для {y_column} по {x_column}')
+    # включаем основную сетку
+    plt.grid(which='major')
+    # включаем дополнительную сетку
+    plt.grid(which='minor', linestyle=':')
+    plt.tight_layout()
     plt.xlabel(x_column)
     plt.ylabel(y_column)
     plt.savefig(f'out_jpg/{name}.jpg', bbox_inches='tight')
@@ -23,7 +28,12 @@ def add_plot(in_date, x_column = 'cause', y_column = 'cnt_incidents', name = 'pl
 
 def add_lineplot(in_date, x_column = 'cause', y_column = 'cnt_incidents', name = 'lineplot', hue_data = "cause"):
     plt.figure(figsize=(10, 6))
-    sns.lineplot(in_date, x = x_column, y = y_column, hue = hue_data)
+    # включаем основную сетку
+    plt.grid(which='major')
+    # включаем дополнительную сетку
+    plt.grid(which='minor', linestyle=':')
+    plt.tight_layout()
+    sns.lineplot(in_date, x = x_column, y = y_column, hue = hue_data, marker='o')
     plt.title(f'Предполагаемый финансовый ущерб по {x_column}')
     plt.savefig(f'out_jpg/{name}.jpg', bbox_inches='tight')
     plt.show()
