@@ -38,7 +38,7 @@
 - log.py для логирования
 
 # Полученные графики
-1. ![Распределение важности признаков](out_jpg/Feature Importance.png)
+1. ![Распределение важности признаков](out_jpg/Feature_Importance.png)
 2. ![Обнаружение выбросов с использованием Z-Score](out_jpg/Outliers.png)
 3. ![Визуализация предсказанных и фактических значений](out_jpg/GradientBoostingRegressor.png)
 4. ![Визуализация предсказанных и фактических значений](out_jpg/LGBMRegressor.png)
