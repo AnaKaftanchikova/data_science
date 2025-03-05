@@ -29,6 +29,7 @@
 # Датасет
 
 Датасет взят по ссылке <https://www.kaggle.com/datasets/paolocons/small-dataset-about-used-fiat-500-sold-in-italy>
+Работа была нацелена на предсказание стоимости автомобиля
 
 # Модули
 
