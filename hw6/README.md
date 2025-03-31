@@ -25,13 +25,14 @@
 - log.py для логирования
 
 # Полученные графики
+
+Все графики находятся в папке out_jpg.
+- feature - Графики распределения показателей датасета
+- clustering - Результат кластеризации (внутри папки с графиками по методам)
+
 1. ![Распределение важности признаков](out_jpg/Feature_importance.png)
-2. ![Обнаружение выбросов с использованием Z-Score](out_jpg/Outliers.png)
-3. ![Визуализация предсказанных и фактических значений](out_jpg/GradientBoostingRegressor.png)
-4. ![Визуализация предсказанных и фактических значений](out_jpg/LGBMRegressor.png)
-5. ![Визуализация предсказанных и фактических значений](out_jpg/ExtraTreesRegressor.png)
-6. ![Визуализация предсказанных и фактических значений](out_jpg/CatBoostRegressor.png)
-7. ![Визуализация предсказанных и фактических значений](out_jpg/Lasso.png)
-8. ![Важность базовых классификаторов на основе мета-классификатора (Logistic Regression)](out_jpg/Feature_importances_with_logreg.png)
+2. ![Матрица корреляции](out_jpg/Corr_origin_info.png)
+3. ![Матрица ошибок для Stacking Classifier](out_jpg/Conf_matrix.png)
+4. ![Важность базовых классификаторов на основе мета-классификатора (Logistic Regression)](out_jpg/Feature_importances_with_logreg.png)
 
 
