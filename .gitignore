@@ -174,3 +174,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+hw6/catboost_info/catboost_training.json
+hw6/catboost_info/learn/events.out.tfevents
+hw6/catboost_info/learn_error.tsv
+hw6/catboost_info/time_left.tsv
